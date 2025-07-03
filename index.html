@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhishek Kumar | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #443778);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar .logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #fff;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links li a {
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links li a:hover {
+      color: #ff5db1;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 6rem 2rem 4rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #fdfdfd;
+    }
+
+    .hero p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #e0e0e0;
+    }
+
+    .hero-buttons {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .btn-primary, .btn-outline {
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .btn-primary {
+      background-color: #ff5db1;
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background-color: #e94b9d;
+    }
+
+    .btn-outline {
+      border: 2px solid #ff5db1;
+      color: #ff5db1;
+    }
+
+    .btn-outline:hover {
+      background-color: #ff5db1;
+      color: #fff;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #ffccff;
+    }
+
+    .section p {
+      text-align: center;
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 0 auto;
+      color: #ddd;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .project-card {
+      background-color: #1e1b3a;
+      padding: 1.5rem;
+      border-radius: 12px;
+      transition: transform 0.3s ease, background 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      background-color: #2b2750;
+    }
+
+    .project-card a {
+      font-weight: bold;
+      color: #ff90d8;
+      display: block;
+      font-size: 1.1rem;
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .skill-list li {
+      list-style: none;
+      padding: 0.5rem 1rem;
+      background-color: #302b63;
+      border-radius: 8px;
+      font-weight: 500;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact a {
+      margin-top: 1.5rem;
+      display: inline-block;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.3);
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">Abhishek Kumar</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h1>Abhishek Kumar</h1>
+    <p>WordPress Developer | 4 Years of Experience in Website Design & SEO </p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn-primary">View My Work</a>
+      <a href="#contact" class="btn-outline">Get In Touch</a>
+    </div>
+  </header>
+
+  <section id="about" class="section about">
+    <h2>About Me</h2>
+    <p>I’m a WordPress Developer with 4 years of hands-on experience in building and managing responsive, user-friendly websites. Skilled in theme customization, website optimization, and content integration, I focus on delivering clean, SEO-friendly, and high-performing WordPress sites. I’m passionate about creating smooth digital experiences and continuously improving my skills to keep up with the latest trends.</p>
+  </section>
+
+  <section id="projects" class="section projects">
+    <h2>Featured Projects</h2>
+    <div class="project-grid">
+      <div class="project-card"><a href="https://www.neraya.in/" target="_blank">Neraya.in</a></div>
+      <div class="project-card"><a href="https://www.meruvann.com/" target="_blank">Meruvann.com</a></div>
+      <div class="project-card"><a href="https://rankoneleads.com/" target="_blank">RankOneLeads.com</a></div>
+      <div class="project-card"><a href="https://www.tigersafariindia.com/" target="_blank">TigerSafariIndia.com</a></div>
+      <div class="project-card"><a href="https://aarnadiagnosticcentre.com/" target="_blank">AarnaDiagnosticCentre.com</a></div>
+      <div class="project-card"><a href="https://synergyhpgas.com/" target="_blank">SynergyHPGas.com</a></div>
+      <div class="project-card"><a href="https://www.sharadvats.com/" target="_blank">SharadVats.com</a></div>
+      <div class="project-card"><a href="https://rcpublicschoolgoverdhan.com/" target="_blank">RC Public School</a></div>
+      <div class="project-card"><a href="https://scoutbizz.com/scoutbizz/home.php" target="_blank">ScoutBizz.com</a></div>
+    </div>
+  </section>
+
+  <section id="skills" class="section skills">
+    <h2>Skills & Expertise</h2>
+    <ul class="skill-list">
+      <li>HTML, CSS, JavaScript</li>
+      <li>React.js, Node.js</li>
+      <li>Wordpress</li>
+       <li>SEO</li>
+      <li>Responsive Web Design</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Let’s Work Together</h2>
+    <p>Interested in working together? Let’s connect!</p>
+    <p>Contact Number : +91-9717320538</p>
+
+    <a href="mailto:abhik.09827@gmail.com" class="btn-primary">Email Me</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Abhishek Kumar. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
